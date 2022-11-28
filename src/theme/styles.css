@@ -1,0 +1,32 @@
+/* base */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=fallback');
+
+@import './tailwind/base.css';
+@import './base/variables.css';
+@import './base/document.css';
+@import './base/font.css';
+@import './base/heading.css';
+
+/* components */
+@import './tailwind/components.css';
+@import './components/link.css';
+@import './components/button.css';
+
+/* utilities */
+@import './tailwind/utilities.css';
+@import './utilities/border.css';
+
+@import './theme.css';
+
+/* See Alpine.js: https://github.com/alpinejs/alpine#x-cloak */
+[x-cloak=""] {
+    display: none;
+}
+
+@media screen and (max-width: theme('screens.lg')) {
+    [x-cloak="lg"] { display: none; }
+}
+
+a {
+    @apply text-blue-600 hover:text-rose-700 visited:text-blue-800
+}
